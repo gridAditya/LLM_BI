@@ -1,0 +1,7 @@
+.env
+.venv/
+docker-compose.yml
+Data/
+insert_data.ipynb
+.DS_Store
+**/__pycache__/

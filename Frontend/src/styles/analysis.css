@@ -1,0 +1,49 @@
+.dashboard {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  right: -80px; 
+  transform: rotate(270deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 1s, right 1s, top 1s;
+}
+
+.dashboard__analysis-button {
+  /* background-color: rgb(112, 114, 115); */
+  background-color: #20a090;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 8px 0px 0;
+  cursor: pointer;
+}
+
+.dashboard__analysis {
+  max-width: 1000px; 
+  min-width: 400px;
+  display: none;
+  border-radius: 0 8px 8px 0;
+  padding: 2rem;
+  transition: all 1s;
+  transform: translatey(500%);
+  background-color: black;
+}
+
+.dashboard:hover .dashboard__analysis {
+  display: unset;
+  transform: unset;
+}
+.dashboard:hover {
+  right: 0px;
+  /* right: unset; */
+  transform: rotate(0deg);
+  transform: translateY(-30%);
+}
+
+.dashboard:hover .dashboard__analysis-button {
+  display: none;
+}
+
